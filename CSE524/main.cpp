@@ -113,16 +113,16 @@ void read_quants_bin(string path){
             n = atof (tempBuffer);
             cout << tempBuffer;
             
-//                        if(matrixMap.count(std::make_pair(row, column)) == 0) {
-//                            std::list<double> values;
-//                            values.push_back(n);
-//                            matrixMap[std::make_pair(row, column)] = values;
-//                        }
-//                        else {
-//                            std::list<double> values = matrixMap[std::pair<string,string>(row, column)];
-//                            values.push_back(n);
-//                            matrixMap[std::make_pair(row, column)] = values;
-//                        }
+                        if(matrixMap.count(std::make_pair(row, column)) == 0) {
+                            std::list<double> values;
+                            values.push_back(n);
+                            matrixMap[std::make_pair(row, column)] = values;
+                        }
+                        else {
+                            std::list<double> values = matrixMap[std::pair<string,string>(row, column)];
+                            values.push_back(n);
+                            matrixMap[std::make_pair(row, column)] = values;
+                        }
         }
     }
 }
